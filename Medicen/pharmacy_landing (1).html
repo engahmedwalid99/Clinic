@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صيدلية الشفاء — خدمة صحية متكاملة</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="main-navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-brand">
+          <div class="logo-icon">✚</div>
+          <div class="brand-text">
+            <span class="brand-title">صيدلية الشفاء</span>
+            <span class="brand-subtitle">خدمة صحية متكاملة</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+          <li><a href="#services" class="nav-link">خدماتنا</a></li>
+          <li><a href="#offers" class="nav-link">العروض</a></li>
+          <li><a href="#products" class="nav-link">المنتجات</a></li>
+          <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="tel:+201000000000" class="nav-phone-btn" title="اتصال هاتفى">
+            <span class="phone-icon">📞</span>
+            <span class="phone-num">01023046551</span>
+          </a>
+          <a
+            href="https://wa.me/+201023046551"
+            class="nav-whatsapp-btn"
+            target="_blank"
+          >
+            <span class="wa-icon">📲</span>
+            <span>طلب سريع</span>
+          </a>
+
+          <button
+            class="menu-toggle"
+            aria-label="فتح القائمة"
+            onclick="toggleMenu()"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-overlay" id="mobileMenu">
+      <div class="mobile-menu-card">
+        <button class="close-menu" onclick="toggleMenu()">×</button>
+        <div class="mobile-logo">
+          <span class="logo-icon">✚</span> صيدلية الشفاء
+        </div>
+        <ul class="mobile-links">
+          <li><a href="#home" onclick="toggleMenu()">الرئيسية</a></li>
+          <li><a href="#services" onclick="toggleMenu()">خدماتنا</a></li>
+          <li><a href="#offers" onclick="toggleMenu()">العروض</a></li>
+          <li><a href="#products" onclick="toggleMenu()">المنتجات</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">اتصل بنا</a></li>
+          <li><a href="#map" onclick="toggleMenu()">موقعنا</a></li>
+        </ul>
+        <div class="mobile-actions">
+          <a
+            href="https://wa.me/+201023046551"
+            class="nav-whatsapp-btn"
+            target="_blank"
+            >تواصل عبر واتساب 📲</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div>
+          <div class="hero-badge">
+            <span class="blink">●</span> متاح 24 ساعة / 7 أيام
+          </div>
+          <h1>صحتك <em>أولويتنا</em><br />دائماً وفي كل وقت</h1>
+          <p>
+            نوفر لك أحدث الأدوية والمستلزمات الطبية بجودة عالية وأسعار منافسة،
+            مع خدمة توصيل سريعة وفريق صيادلة متخصصين.
+          </p>
+          <div class="hero-btns">
+            <a href="#contact" class="btn-primary">🛒 اطلب الآن</a>
+            <a href="#services" class="btn-outline">💊 تصفح الخدمات</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong>+5000</strong><span>عميل راضٍ</span></div>
+            <div class="stat"><strong>+300</strong><span>منتج متوفر</span></div>
+            <div class="stat"><strong>15+</strong><span>سنة خبرة</span></div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="floating-badge">🔥 عروض اليوم</div>
+          <div class="hero-card-icon">🏥</div>
+          <div class="service-pills">
+            <div class="pill">💊 أدوية</div>
+            <div class="pill">💉 لقاحات</div>
+            <div class="pill">🧴 مستحضرات</div>
+            <div class="pill">🩺 أجهزة طبية</div>
+            <div class="pill">🌿 أعشاب</div>
+            <div class="pill">👶 أطفال</div>
+            <div class="pill">🚚 توصيل سريع</div>
+            <div class="pill">✅ استشارة مجانية</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="inner">
+        <span class="section-label">خدماتنا</span>
+        <h2 class="section-title">كل ما تحتاجه لصحتك في مكان واحد</h2>
+        <p class="section-sub">
+          نقدم مجموعة شاملة من الخدمات الصيدلانية المتخصصة لتلبية احتياجاتك
+          الصحية.
+        </p>
+        <div class="grid-3">
+          <div class="service-card">
+            <div class="service-icon">💊</div>
+            <h3>صرف الأدوية</h3>
+            <p>
+              جميع الأدوية المعتمدة بوصفة وبدون وصفة، مع التحقق من سلامة
+              التفاعلات الدوائية.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🩺</div>
+            <h3>استشارات صيدلانية</h3>
+            <p>
+              فريق متخصص من الصيادلة لمساعدتك في اختيار العلاج المناسب والإجابة
+              على استفساراتك.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🚚</div>
+            <h3>توصيل للمنزل</h3>
+            <p>
+              خدمة توصيل سريعة لجميع الأحياء، اطلب ونحن نوصل لك خلال أقل من
+              ساعة.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🌿</div>
+            <h3>منتجات طبيعية</h3>
+            <p>
+              تشكيلة واسعة من الأعشاب الطبية، المكملات الغذائية، والزيوت
+              الطبيعية المعتمدة.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">👶</div>
+            <h3>منتجات الأطفال</h3>
+            <p>
+              أدوية الأطفال، الحليب الصناعي، والمستلزمات الصحية للرضع والأطفال
+              بكل الأعمار.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🧴</div>
+            <h3>مستحضرات العناية</h3>
+            <p>
+              منتجات عناية بالبشرة والشعر من أفضل العلامات التجارية الطبية
+              والتجميلية.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFERS -->
+    <section class="offers-section" id="offers">
+      <div class="inner">
+        <span class="section-label">العروض والخصومات</span>
+        <h2 class="section-title">عروض حصرية لا تفوتك 🔥</h2>
+        <p class="section-sub">
+          وفّر أكثر مع عروضنا الأسبوعية والشهرية على أشهر المنتجات.
+        </p>
+        <div class="grid-4">
+          <div class="offer-card">
+            <div class="offer-tag">محدود</div>
+            <div class="offer-banner green">
+              <div class="offer-discount">30<sub>%</sub></div>
+              <div class="offer-text">
+                <h4>فيتامينات ومكملات</h4>
+                <p>على جميع المنتجات</p>
+              </div>
+            </div>
+            <div class="offer-body"><small>⏱ ينتهي بعد 3 أيام</small></div>
+          </div>
+          <div class="offer-card">
+            <div class="offer-tag">جديد</div>
+            <div class="offer-banner amber">
+              <div class="offer-discount">25<sub>%</sub></div>
+              <div class="offer-text">
+                <h4>مستحضرات الجمال</h4>
+                <p>علامات مختارة</p>
+              </div>
+            </div>
+            <div class="offer-body"><small>⏱ ينتهي بعد 7 أيام</small></div>
+          </div>
+          <div class="offer-card">
+            <div class="offer-banner blue">
+              <div class="offer-discount">2+1</div>
+              <div class="offer-text">
+                <h4>منتجات الأطفال</h4>
+                <p>اشترِ 2 واحصل على 1</p>
+              </div>
+            </div>
+            <div class="offer-body"><small>🎁 على منتجات مختارة</small></div>
+          </div>
+          <div class="offer-card">
+            <div class="offer-banner rose">
+              <div class="offer-discount">20<sub>%</sub></div>
+              <div class="offer-text">
+                <h4>أجهزة قياس</h4>
+                <p>ضغط - سكر - حرارة</p>
+              </div>
+            </div>
+            <div class="offer-body"><small>⏱ ينتهي نهاية الشهر</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products-section" id="products">
+      <div class="inner">
+        <span class="section-label">المنتجات</span>
+        <h2 class="section-title">أكثر المنتجات طلباً</h2>
+        <p class="section-sub">
+          تشكيلة واسعة من المنتجات الأصلية المعتمدة بأفضل الأسعار.
+        </p>
+        <div class="grid-4">
+          <div class="product-card">
+            <div class="product-img bg1">💊</div>
+            <div class="product-info">
+              <h4>فيتامين C 1000mg</h4>
+              <div class="cat">مكملات غذائية</div>
+              <div class="product-price">
+                <span class="old">89 ج</span>65 جنيه
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-img bg2">🩺</div>
+            <div class="product-info">
+              <h4>جهاز قياس ضغط الدم</h4>
+              <div class="cat">أجهزة طبية</div>
+              <div class="product-price">
+                <span class="old">450 ج</span>360 جنيه
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-img bg3">🧴</div>
+            <div class="product-info">
+              <h4>كريم الترطيب Nivea</h4>
+              <div class="cat">عناية بالبشرة</div>
+              <div class="product-price">120 جنيه</div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-img bg4">👶</div>
+            <div class="product-info">
+              <h4>حليب نان برو 400g</h4>
+              <div class="cat">منتجات الأطفال</div>
+              <div class="product-price">
+                <span class="old">210 ج</span>180 جنيه
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact" style="padding: 80px 5%">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <span class="section-label">تواصل معنا</span>
+          <h2>اطلب أو تواصل معنا الآن</h2>
+          <p>
+            فريقنا متاح على مدار الساعة لخدمتك. تواصل معنا عبر واتساب أو الهاتف
+            مباشرةً.
+          </p>
+          <div class="contact-btns">
+            <a
+              href="https://wa.me/+201023046551?text=مرحباً،%20أريد%20الاستفسار%20عن%20منتج"
+              class="cbtn cbtn-whatsapp"
+              target="_blank"
+            >
+              <div class="cbtn-icon">📲</div>
+              <div class="cbtn-text">
+                <strong>واتساب — تواصل الآن</strong
+                ><span>رد فوري خلال دقائق</span>
+              </div>
+            </a>
+            <a href="tel:+201023046551" class="cbtn cbtn-phone">
+              <div class="cbtn-icon">📞</div>
+              <div class="cbtn-text">
+                <strong>اتصل هاتفياً</strong><span>+20 1023046551</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>📦 اطلب منتجاً</h3>
+          <div class="form-group">
+            <label>الاسم</label
+            ><input type="text" placeholder="اكتب اسمك هنا..." id="fname" />
+          </div>
+          <div class="form-group">
+            <label>رقم الهاتف</label
+            ><input type="tel" placeholder="01X XXXX XXXX" id="fphone" />
+          </div>
+          <div class="form-group">
+            <label>القسم</label>
+            <select id="fcat">
+              <option value="">اختر القسم</option>
+              <option>أدوية</option>
+              <option>فيتامينات ومكملات</option>
+              <option>مستحضرات جمال</option>
+              <option>منتجات الأطفال</option>
+              <option>أجهزة طبية</option>
+              <option>أخرى</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>تفاصيل الطلب</label
+            ><textarea
+              id="fmsg"
+              placeholder="اكتب المنتج أو الطلب هنا..."
+            ></textarea>
+          </div>
+          <button class="btn-submit" onclick="sendOrder()">
+            إرسال الطلب عبر واتساب 
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map-section" id="map">
+      <div class="inner">
+        <span class="section-label">موقعنا</span>
+        <h2 class="section-title">زورنا في الصيدلية</h2>
+        <p class="section-sub">
+          نحن في قلب المدينة، سهل الوصول إلينا بالسيارة أو المشي.
+        </p>
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.3264752394496!2d31.23573!3d30.06263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAzJzQ1LjUiTiAzMcKwMTQnMDkuNiJF!5e0!3m2!1sar!2seg!4v1620000000000"
+            width="100%"
+            height="380"
+            style="border: 0; display: block"
+            allowfullscreen
+            loading="lazy"
+            title="موقع الصيدلية"
+          >
+          </iframe>
+          <div class="map-info">
+            <div class="map-info-item">
+              <div class="mi-icon">📍</div>
+              <div>
+                <strong>العنوان</strong
+                ><span>١٢ شارع التحرير، وسط البلد، القاهرة</span>
+              </div>
+            </div>
+            <div class="map-info-item">
+              <div class="mi-icon">🕐</div>
+              <div>
+                <strong>ساعات العمل</strong
+                ><span>السبت – الخميس: ٩ص – ١٢م</span>
+              </div>
+            </div>
+            <div class="map-info-item">
+              <div class="mi-icon">📞</div>
+              <div><strong>للاتصال</strong><span>+201023046551</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-logo">
+          <div
+            class="logo-icon"
+            style="width: 30px; height: 30px; font-size: 1.1rem"
+          >
+            ✚
+          </div>
+          صيدلية الشفاء
+        </div>
+        <nav class="footer-links">
+          <a href="#home">الرئيسية</a>
+          <a href="#services">الخدمات</a>
+          <a href="#offers">العروض</a>
+          <a href="#products">المنتجات</a>
+          <a href="#contact">تواصل معنا</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 صيدلية الشفاء — جميع الحقوق محفوظة</p>
+      </div>
+    </footer>
+
+    <div class="float-btns">
+      <a
+        href="https://wa.me/+201023046551"
+        class="float-btn float-wa"
+        target="_blank"
+        title="واتساب"
+        >📲</a
+      >
+      <a href="tel:+201023046551" class="float-btn float-ph" title="اتصال"
+        >📞</a
+      >
+    </div>
+
+    <div id="toast">✅ تم إرسال طلبك بنجاح!</div>
+    <script src="main.js"></script>
+  </body>
+</html>
